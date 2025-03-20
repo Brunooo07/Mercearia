@@ -1,2 +1,4 @@
-carnes
+verduras
 bicho
+frutas
+laticínios

@@ -1,0 +1,2 @@
+maçã|5|frutas|6
+queijo|4|frutas|2

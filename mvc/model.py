@@ -9,7 +9,7 @@ class Produtos:
         self.categoria = categoria
 class Estoque:
     def __init__(self, produto: Produtos, quantidade):
-        self.produtor = produto
+        self.produto = produto
         self.quantidade = quantidade
 class Venda:
     def __init__(self, itensVendidos: Produtos, vendedor, comprador, quantidadeVendida, data = datetime.now()):

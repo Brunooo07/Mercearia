@@ -2,17 +2,16 @@ from model import *
 import os
 class DaoCategoria: 
     @classmethod
-    def salvar(cls, categoria: Categoria):
+    def salvar(cls, categoria):
         with open("categoria.txt", 'a') as arq:
-            arq.writelines(categoria.categoria)
+            arq.writelines(categoria)
             arq.writelines("\n")
     @classmethod
     def ler(cls):
-        if not os.path.exists('categoria.txt'):
-            open('categoria.txt', 'w').close()
         with open('categoria.txt', 'r') as arq:
             cls.categoria = arq.readlines()
-        cls.categoria = list(map(lambda x: x.replace('\n', ''), cls.categoria))        
+            cls.categoria = list(map(lambda x: x.replace('\n', ''), cls.categoria))
+        print(cls.categoria)
         cat = []
         for i in cls.categoria:
             cat.append(Categoria(i))
@@ -50,14 +49,19 @@ class DaoEstoque:
             arq.writelines('\n')
     @classmethod
     def ler(cls):
-        with open('estoque.txt', 'a') as arq:
+        with open('estoque.txt', 'r') as arq:
             cls.estoque = arq.readlines()
-        cls.estoque = list(map(lambda x: x.replace('n', ''), cls.estoque))
-        cls.estoque = list(map(lambda x: x.split('\n', ''), cls.estoque))
+        cls.estoque = list(map(lambda x: x.replace('\n', ''), cls.estoque))
+        cls.estoque = list(map(lambda x: x.split('|'), cls.estoque))
         est = []
         if len(cls.estoque) > 0:
             for i in cls.estoque:
-                est.append(Estoque(Produtos(i[0], i[1], i[2], i[3])))
+                produto = Produtos(i[0], i[1], i[2]) # nome, preco, categoria
+                estoque = Estoque(produto, int(i[3]))
+                
+                
+                     # produto + quantidade
+                est.append(estoque)
         return est
 class DaoFornecedor:
     @classmethod
