@@ -68,7 +68,6 @@ class DaoFornecedor:
     def salvar(cls, fornecedor: Fornecedor):
         with open('fornecedor.txt', 'a') as arq:
             arq.writelines(fornecedor.nome + "|" + fornecedor.cnpj + "|" + fornecedor.telefone + "|" + fornecedor.categoria)
-            arq.writelines('\n')
     @classmethod
     def ler(cls):
         with open('fornecedor.txt', 'r') as arq:
@@ -77,6 +76,8 @@ class DaoFornecedor:
         cls.fornecedores = list(map(lambda x: x.split('|'), cls.fornecedores))
         forn = []
         for i in cls.fornecedores:
+            if len(i) < 4: #Garante que tem ao menos 4 campos
+                continue
             forn.append(Fornecedor(i[0], i[1], i[2], i[3]))
         return forn
 class DaoPessoa:

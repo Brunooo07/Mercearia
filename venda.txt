@@ -1,12 +1,12 @@
-banana|5|frutas|caio|marcos|3|2025-03-16 03:20:56
-maçã|5|frutas|caio|marcos|2|2025-03-20 13:40:59
-maçã|5|frutas|felipe|caio|2|2025-03-20 16:54:13
-maçã|5|frutas|felipe|caio|2|2025-03-20 16:57:19
-maçã|5|frutas|felipe|caio|2|2025-03-20 16:59:06
-maçã|5|frutas|felipe|caio|2|2025-03-20 16:59:22
-maçã|5|frutas|felipe|caio|2|2025-03-20 16:59:24
-maçã|5|frutas|felipe|caio|2|2025-03-20 17:01:34
-queijo|4|frutas|paulo|pedro|2|2025-03-20 19:01:21
-queijo|4|frutas|paulo|pedro|2|2025-03-20 19:01:25
-queijo|4|frutas|paulo|pedro|2|2025-03-20 19:01:26
-queijo|4|frutas|paulo|pedro|2|2025-03-20 19:06:16
+banana|5|frutas|caio|marcos|3|16-03-2025
+maçã|5|frutas|caio|marcos|2|20-03-2025
+maçã|5|frutas|felipe|caio|2|20-03-2025 
+maçã|5|frutas|felipe|caio|2|20-03-2025 
+maçã|5|frutas|felipe|caio|2|20-03-2025 
+maçã|5|frutas|felipe|caio|2|20-03-2025 
+maçã|5|frutas|felipe|caio|2|20-03-2025 
+maçã|5|frutas|felipe|caio|2|20-03-2025 
+queijo|4|frutas|paulo|pedro|2|20-03-2025 
+queijo|4|frutas|paulo|pedro|2|20-03-2025 
+queijo|4|frutas|paulo|pedro|2|20-03-2025 
+queijo|4|frutas|paulo|pedro|2|20-03-2025 
